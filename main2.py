@@ -3,6 +3,8 @@ import os
 from dotenv import load_dotenv
 
 mail='''
+
+
 Привет, %friend_name%! %my_name% приглашает тебя на сайт %website%!
 
 %website% — это новая версия онлайн-курса по программированию. 
@@ -24,13 +26,14 @@ frend_name='Ирина'
 my_name='Алексей'
 website='https://dvmn.org/profession-ref-program/lsamsonov2013/r6PIz/'
 my_mail='leha.samsonov.2000@mail.ru'
-frend_mail='666ren12qaz@gmail.com'
+frend_mail='devmanorg@yandex.ru'
 
 latter='''From:%my_mail%
 To:%frend_mail%
 Subject:Приглашение
 Content-Type:text/plain; charset="UTF-8";
 	'''
+
 mail=mail.replace('%website%',website)
 mail=mail.replace('%friend_name%',frend_name)
 mail=mail.replace('%my_name%',my_name)
